@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../styles/productPage.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Sonho de Valsa | Comprar</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../assets/pngwing.com.png" alt="logo-img" />
+        <h2>Integra.Candy</h2>
+      </div>
+    </header>
+    <main>
+      <div>
+        <a class="backButton" href="../index.html">
+          <img src="../assets/CaretLeft.svg" alt="seta-pra-esquerda" />
+          voltar
+        </a>
+      </div>
+
+      <section class="product">
+        <img src="../assets/kitkat.png" alt="bombom" />
+
+        <div class="description">
+          <h1>Chocolate Nestle KIT KAT®</h1>
+          <p>
+            O KIT KAT® é feito de três camadas de wafer separadas e cobertas por
+            uma camada externa de chocolate. As barras padrão consistem em
+            quatro peças, chamadas dedos, e cada dedo pode ser retirado da barra
+            como uma peça individual. "Have a Breake, Have a Kit Kat"
+          </p>
+          <h2>R$1,00</h2>
+        </div>
+      </section>
+
+      <section class="form-box">
+        <h2>PREENCHA COM SEUS DADOS PARA FINALIZAR A COMPRA</h2>
+        <form>
+          <div class="check-box">
+            <label id="labelCheckbox" class="input-box-text">
+              Você faz parte da banca avaliadora?
+              <input type="checkbox" id="boolBanca" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div id="textoNome">
+            <span class="input-box-text">Digite seu nome:</span>
+            <input
+              type="text"
+              name="mensagem"
+              id="textoNome"
+              class="input-box"
+              placeholder="Seu nome"
+            />
+          </div>
+
+          <div id="textoNumero">
+            <span class="input-box-text">Digite seu número do WhatsApp:</span>
+            <input
+              type="text"
+              name="mensagem"
+              id="textoNumero"
+              class="input-box"
+              placeholder="(11) 91234-5678"
+            />
+            <br />
+          </div>
+
+          <div id="sendRequest">
+            <button
+              type="submit"
+              value="Finalizar compra"
+              onclick="handleFormSubmit(textoNome.value, textoNumero.value, 'Kit-Kat')"
+            >
+              Finalizar compra
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script type="text/javascript" src="../functions.js">
+      document.getElementById("sendRequest")
+      let button = document.getElementById("sendRequest")
+      let telefone = document.getElementById("textoNumero")
+
+      var numero = telefone.value
+      let nome = document.getElementById("textoNome")
+    </script>
+  </body>
+</html>

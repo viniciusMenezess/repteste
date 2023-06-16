@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins';
+  font-size: 1.6rem;
+
+  background-color: #000000d8;
+
+  color: #e1e1e6;
+
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background-color: black;
+  padding: 2rem 2rem;
+
+  margin-bottom: 2.4rem;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  justify-content: center;
+}
+
+header .logo img {
+  width: 5rem;
+  height: 5rem;
+}
+
+header .logo h2 {
+  color: white;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+
+  font-size: 2.4rem;
+
+  margin-left: 10rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+
+  margin-bottom: 8rem;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5rem;
+  margin-bottom: 6rem;
+}
+
+.product .description h1 {
+  font-size: 3rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.description h2 {
+  font-size: 3rem;
+  color: #4ac54a;
+}
+
+.product .description p {
+  font-size: 1.8rem;
+  width: 80rem;
+  text-align: justify;
+
+  line-height: 150%;
+}
+
+.ourobranco {
+  height: 30rem;
+}
+
+.sonhodevalsa {
+  height: 27.5rem;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: 10rem;
+}
+
+#sendRequest button {
+  border: 0;
+  padding: 1.2rem 5.3rem;
+
+  text-transform: uppercase;
+
+  font-family: 'Poppins';
+  font-weight: bold;
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+
+  margin-top: 3rem;
+}
+
+#sendRequest button:hover {
+  background: #32cd32;
+  color: white;
+
+  transition: 0.25s;
+}
+
+#boolBanca {
+  width: 20px;
+  height: 20px;
+  border: 0;
+
+  margin-top: 1rem;
+}
+
+#textoNome input {
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+  font-family: 'Poppins';
+  padding: 0.5rem;
+}
+
+#textoNumero input {
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+  font-family: 'Poppins';
+  padding: 0.5rem;
+}
+
+#textoNome input::placeholder {
+  padding: 0.5rem;
+}
+
+#textoNumero input::placeholder {
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: initial;
+    padding: initial;
+  }
+
+  .backButton {
+    margin: initial;
+
+    margin-left: 3.5rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product img {
+    height: 20rem;
+  }
+
+  .product .description h1 {
+    font-size: 2rem;
+  }
+
+  .product .description h2 {
+    font-size: 3rem;
+    color: #4ac54a;
+  }
+
+  .product .description p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+
+  .alpino {
+    width: 35rem;
+  }
+
+  .form-box {
+    margin: initial;
+    padding: 4rem;
+  }
+}

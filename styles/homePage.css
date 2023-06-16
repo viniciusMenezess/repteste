@@ -1,0 +1,265 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins';
+  font-size: 1.6rem;
+
+  background-color: #000000d8;
+}
+
+header {
+  background-color: black;
+  padding: 2rem 2rem;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  justify-content: center;
+}
+
+header .logo h2 {
+  color: white;
+}
+
+header .logo img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.apresentation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .apresentation .initial-text {
+  color: white;
+  width: 50rem;
+  text-align: center;
+
+  margin-top: 4rem;
+}
+
+main .apresentation .initial-text p span {
+  font-weight: bold;
+}
+
+main h2 {
+  color: white;
+  margin-left: 10rem;
+  margin-top: 7rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40rem;
+  height: 100%;
+  margin-top: 5rem;
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.product-description h3 {
+  color: white;
+}
+
+.product .product-description .frete-gratis {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product .product-description .frete-gratis p {
+  color: #32cd32;
+  font-weight: bold;
+}
+
+.product .product-description .preco {
+  color: lightskyblue;
+}
+
+.product .product-description .frete-gratis img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.vitrine {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.product button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+
+  margin-top: 2rem;
+
+  font-family: 'Poppins';
+
+  border: 0;
+
+  text-transform: uppercase;
+  font-weight: bold;
+
+  border-radius: 0.4rem;
+
+  cursor: pointer;
+}
+
+.product button:hover {
+  background: #32cd32;
+  color: white;
+
+  transition: 0.25s;
+}
+
+footer {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+  color: white;
+  padding: 2.3rem 10rem;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+footer .footer-text p:nth-child(1) {
+  font-weight: bold;
+}
+
+.social-links {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-links img {
+  width: 2.5rem;
+}
+
+.ouro-branco {
+  width: 32.2rem;
+}
+
+.kitkat {
+  width: 33rem;
+  height: 21.8rem;
+}
+
+.alpino {
+  width: 37rem;
+  height: 22rem;
+}
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  main h2 {
+    margin: initial;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.7rem;
+
+    margin-top: 2rem;
+  }
+
+  .vitrine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-text p {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    padding: 2.3rem 2.3rem;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+
+    margin-top: 5rem;
+  }
+
+  .social-links {
+    flex-direction: column;
+  }
+
+  .sonhodevalsa {
+    width: 32rem;
+  }
+
+  .ouro-branco {
+    width: 28rem;
+  }
+
+  .kitkat {
+    width: 29rem;
+    height: 17rem;
+  }
+
+  .alpino {
+    width: 31rem;
+    height: 18rem;
+  }
+
+  .initial-text p {
+    width: 100%;
+  }
+}
